@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react"
 import JobCard from "../Components/JobCard"
 import { SavedJobsContext } from "../Context/SavedJobsContext"
-import getJobs from "../Services/jobService"
+import {getJobs} from "../Services/jobService"
 
 import "./Jobs.css"
 
