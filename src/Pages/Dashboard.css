@@ -1,0 +1,210 @@
+.dashboard-page {
+    min-height: 100vh;
+
+    padding: 40px 60px;
+    padding-top: 110px;
+
+    background-color: #f3e8ff;
+    box-sizing: border-box;
+}
+
+.dashboard-page h1 {
+    text-align: center;
+
+    color: #0f172a;
+
+    margin-bottom: 40px;
+
+    font-size: 34px;
+}
+
+.dashboard-welcome {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+
+    text-align: center;
+}
+
+.dashboard-welcome h2 {
+    color: #0f766e;
+}
+
+.dashboard-welcome p {
+    color: #64748b;
+}
+
+/* Statistics */
+
+.dashboard-stats {
+    max-width: 1000px;
+
+    margin: 0 auto 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.dashboard-stat-card {
+    background-color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    border: 1px solid #ddd6fe;
+
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.dashboard-stat-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 18px rgba(15, 23, 42, 0.12);
+}
+
+.dashboard-stat-card h2 {
+    margin: 0;
+
+    color: #0f766e;
+
+    font-size: 32px;
+}
+
+.dashboard-stat-card p {
+    margin-bottom: 0;
+
+    color: #64748b;
+}
+
+/* Dashboard Sections */
+
+.dashboard-section {
+    max-width: 1000px;
+
+    margin: 0 auto 30px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border: 1px solid #ddd6fe;
+
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+.dashboard-section h2 {
+    margin-top: 0;
+
+    color: #0f172a;
+}
+
+.dashboard-job {
+    padding: 18px 0;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard-job:last-child {
+    border-bottom: none;
+}
+
+.dashboard-job h3 {
+    margin: 0 0 8px;
+
+    color: #0f172a;
+}
+
+.dashboard-job p {
+    margin: 5px 0;
+
+    color: #64748b;
+}
+
+.dashboard-empty {
+    color: #64748b;
+}
+
+/* Links */
+
+.dashboard-link {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #0f766e;
+
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+.dashboard-link:hover {
+    color: #115e59;
+
+    text-decoration: underline;
+}
+
+/* Logout */
+
+.dashboard-actions {
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    text-align: center;
+}
+
+.dashboard-logout {
+    padding: 11px 24px;
+    border: none;
+    border-radius: 7px;
+
+    background-color: #dc2626;
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease,
+                transform 0.1s ease;
+}
+
+.dashboard-logout:hover {
+    background-color: #b91c1c;
+}
+
+.dashboard-logout:active {
+    background-color: #991b1b;
+    transform: scale(0.96);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .dashboard-page {
+        padding: 30px 20px;
+        padding-top: 100px;
+    }
+
+    .dashboard-page h1 {
+        font-size: 28px;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-section {
+        padding: 20px;
+    }
+}

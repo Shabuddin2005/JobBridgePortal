@@ -1,0 +1,108 @@
+.job-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+
+    border: 1px solid #ddd6fe;
+
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.14);
+}
+
+.job-card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    color: #0f172a;
+
+    font-size: 22px;
+}
+
+.job-card p {
+    margin: 10px 0;
+
+    color: #475569;
+
+    line-height: 1.5;
+}
+
+.job-card p strong {
+    color: #334155;
+}
+
+.job-card-buttons {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 22px;
+
+    flex-wrap: wrap;
+}
+
+.view-button,
+.save-button {
+    padding: 9px 16px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.view-button:hover,
+.save-button:hover {
+    transform: translateY(-1px);
+}
+
+.view-button {
+    background-color: #0f766e;
+    color: white;
+}
+
+.view-button:hover {
+    background-color: #115e59;
+}
+
+.save-button {
+    background-color: #007137;
+    color: white;
+}
+
+.save-button:active {
+    background-color: #05492f;
+    transform: scale(0.96);
+}
+
+
+@media (max-width: 768px) {
+
+    .job-card {
+        padding: 20px;
+    }
+
+    .job-card h2 {
+        font-size: 20px;
+    }
+
+    .job-card-buttons {
+        flex-direction: column;
+    }
+
+    .view-button,
+    .save-button {
+        width: 100%;
+    }
+}
