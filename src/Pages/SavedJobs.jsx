@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 import { SavedJobsContext } from "../Context/SavedJobsContext"
-import { getJobById } from "../services/jobService"
+import { getJobById } from "../Services/jobService"
 
 import "./SavedJobs.css"
 

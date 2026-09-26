@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
 
-import { getJobById } from "../services/jobService"
+import { getJobById } from "../Services/jobService"
 import { ApplicationContext } from "../Context/ApplicationContext"
 
 import "./JobDetails.css"
