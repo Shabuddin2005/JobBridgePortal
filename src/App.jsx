@@ -8,7 +8,7 @@ import JobDetails from "./Pages/JobDetails"
 import SavedJobs from "./Pages/SavedJobs"
 import Login from "./Pages/Login"
 import Dashboard from "./Pages/Dashboard"
-
+import Footer from "./Components/Footer"
 import SavedJobsProvider from "./Context/SavedJobsContext"
 import AuthProvider from "./Context/AuthContext"
 import ApplicationProvider from "./Context/ApplicationContext"
@@ -65,6 +65,7 @@ function App() {
                             />
 
                         </Routes>
+                        <Footer />
 
                     </div>
 

@@ -113,6 +113,9 @@
 }
 
 @media (max-width: 768px) {
+    .home-page{
+        padding-top: 175px;
+    }
     .hero-section {
         flex-direction: column;
         text-align: center;
