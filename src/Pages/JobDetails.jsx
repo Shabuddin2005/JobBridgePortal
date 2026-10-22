@@ -92,14 +92,12 @@ function JobDetails() {
                 <div className="job-details-info">
 
                     <p>
-                         {job.city || "Location not specified"}
+                         {job.location || "Location not specified"}
                     </p>
 
                     <p>
                         {" "}
-                        {job.salary_min
-                            ? `${job.salary_min}${job.salary_max ? ` - ${job.salary_max}` : ""} ${job.salary_currency || ""} / ${job.salary_period || ""}`
-                            : "Not specified"}
+                        {job.salary || "Not specified"}
                     </p>
 
                 </div>
